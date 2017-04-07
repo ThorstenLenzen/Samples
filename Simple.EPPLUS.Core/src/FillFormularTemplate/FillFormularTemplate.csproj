@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>Toto.Simple.EPPLUS.Core</AssemblyName>
+    <RootNamespace>Toto.Simple.EPPLUS.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ErstmeldungKritischeInfrastrukturTemplate.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
