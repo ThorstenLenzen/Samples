@@ -1,0 +1,7 @@
+<br-create-book (bookCreated)="addBook($event)"></br-create-book>
+
+<hr>
+
+<br-book *ngFor="let book of books; let i = index"
+         [book]="book"
+         (rated)="reorderBooks($event)"></br-book>

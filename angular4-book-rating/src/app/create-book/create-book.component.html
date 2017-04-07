@@ -1,0 +1,31 @@
+<form #myForm="ngForm" (ngSubmit)="add()">
+  <div class="form-group">
+      <label for="title">Title</label>
+      <input class="form-control"
+             name="title"
+             [(ngModel)]="book.title"
+             required>
+  </div>
+  <div class="form-group">
+    <label for="isbn">ISBN</label>
+    <input class="form-control"
+           name="isbn"
+           [(ngModel)]="book.isbn"
+           required
+           minlength="3"
+           #isbn="ngModel">
+    <div [hidden]="isbn.valid || isbn.untouched"
+         class="alert alert-danger">Bitte geben sie eine ISBN ein!!!!</div>
+  </div>
+  <div class="form-group">
+     <label for="description">Description</label>
+     <textarea class="form-control"
+               name="description"
+               [(ngModel)]="book.description"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-success" [disabled]="myForm.invalid">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    &nbsp;&nbsp;Add Book
+  </button>
+</form>
