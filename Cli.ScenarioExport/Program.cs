@@ -23,7 +23,8 @@ namespace Cli.ScenarioExport
 
         public static async Task Main(string[] args)
         {
-            var targetSystem = "Local";
+            //var targetSystem = "Local";
+            var targetSystem = "Nightly";
 
             SelectBaseUrl(targetSystem);
 
