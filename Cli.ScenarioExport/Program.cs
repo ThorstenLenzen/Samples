@@ -19,12 +19,12 @@ namespace Cli.ScenarioExport
         private const string ScenarioEndpoint = "ldscenario";
         private const string ExportEndpoint = "ldexport";
 
-        private static readonly Guid ScenarioGuid = Guid.Parse("66fb0844-cc2b-47d0-9443-00245e7792f2");
+        private static readonly Guid ScenarioGuid = Guid.Parse("00fc8104-401e-411a-8a55-8d16bf879d42");
 
         public static async Task Main(string[] args)
         {
-            //var targetSystem = "Local";
-            var targetSystem = "Nightly";
+            var targetSystem = "Local";
+            // var targetSystem = "Nightly";
 
             SelectBaseUrl(targetSystem);
 
